@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KosAiGen - AI Chat</title>
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <!-- Profil -->
+      <div class="profile">
+        <div class="profile-avatar">👤</div>
+      </div>
+
+      <!-- Ana Navigasyon -->
+      <nav class="main-nav">
+        <!-- Yeni Sohbet -->
+        <div class="nav-group">
+          <a href="#" class="nav-link main-link">
+            <i class="nav-icon">➕</i>
+            <span class="nav-text">Yeni Sohbet</span>
+          </a>
+          <div class="nav-submenu">
+            <a href="#" class="nav-link sub-link">
+              <i class="nav-icon">👨‍💻</i>
+              <span class="nav-text">Kod Yaz</span>
+            </a>
+            <a href="#" class="nav-link sub-link">
+              <i class="nav-icon">🎨</i>
+              <span class="nav-text">Görsel Üret</span>
+            </a>
+            <a href="#" class="nav-link sub-link">
+              <i class="nav-icon">📝</i>
+              <span class="nav-text">Metin Yaz</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Önceki Sohbetler -->
+        <a href="#" class="nav-link main-link">
+          <i class="nav-icon">💬</i>
+          <span class="nav-text">Önceki Sohbetler</span>
+        </a>
+      </nav>
+
+      <!-- Ayarlar -->
+      <div class="nav-group settings-group">
+        <a href="#" class="nav-link main-link">
+          <i class="nav-icon">⚙️</i>
+          <span class="nav-text">Ayarlar</span>
+        </a>
+        <div class="nav-submenu settings-submenu">
+          <a href="#" class="nav-link sub-link" id="themeToggle">
+            <i class="nav-icon">🌓</i>
+            <span class="nav-text">Tema Değiştir</span>
+          </a>
+          <a href="#" class="nav-link sub-link" id="languageToggle">
+            <i class="nav-icon">🌍</i>
+            <span class="nav-text">Dil: TR</span>
+          </a>
+          <a href="#" class="nav-link sub-link" id="profileSettings">
+            <i class="nav-icon">👤</i>
+            <span class="nav-text">Profil</span>
+          </a>
+          <a href="#" class="nav-link sub-link" id="logout">
+            <i class="nav-icon">🚪</i>
+            <span class="nav-text">Çıkış</span>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Chat Container -->
+    <main class="chat-container">
+      <!-- Chat Header -->
+      <div class="chat-header">
+        <div class="chat-header-avatar">🤖</div>
+        <div class="chat-header-info">
+          <div class="chat-header-title">KosAiGen Asistanı</div>
+          <div class="chat-header-subtitle">Sorular ve Yardım için ✉️ kosaigeng@gmail.com</div>
+        </div>
+      </div>
+
+      <!-- Chat Messages -->
+      <div class="chat-messages" id="chatMessages">
+        <!-- AI Mesajı -->
+        <div class="message received">
+          <div class="message-avatar">🤖</div>
+          <div class="message-bubble">
+            <div class="message-text">Merhaba! Size nasıl yardımcı olabilirim?</div>
+            <div class="message-time"><script>getCurrentTime()</script></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Message Input -->
+      <div class="message-input-container">
+        <textarea id="messageInput" placeholder="Mesajınızı yazın..." rows="1"></textarea>
+        <button id="sendMessage">➤</button>
+      </div>
+    </main>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="static/js/script.js"></script>
+</body>
+</html>

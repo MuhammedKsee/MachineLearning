@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KosAiGen - Profil</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar - index.html ile aynı -->
+        <div class="sidebar">
+            <!-- Profil Emoji -->
+            <div class="profile">
+                <div class="profile-emoji" data-translate="profileEmoji">👤</div>
+            </div>
+
+            <!-- Ana Menü -->
+            <div class="menu-section">
+                <a href="index.html" class="menu-item" id="newChatBtn">
+                    <i class="new-chat-icon">💭</i>
+                    <span data-translate="newChat">Yeni Sohbet</span>
+                </a>
+                <div class="menu-group">
+                    <a href="#" class="menu-item" id="codeWriteBtn">
+                        <i class="code-icon">💻</i>
+                        <span data-translate="codeWrite">Kod Yaz</span>
+                    </a>
+                    <a href="#" class="menu-item" id="imageGenerateBtn">
+                        <i class="image-icon">🎨</i>
+                        <span data-translate="imageGenerate">Görsel Üret</span>
+                    </a>
+                    <a href="#" class="menu-item" id="textWriteBtn">
+                        <i class="text-icon">📝</i>
+                        <span data-translate="textWrite">Metin Yaz</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sohbet Geçmişi -->
+            <div class="chat-history">
+                <div class="history-header">
+                    <i class="chat-history-icon">📚</i>
+                    <span data-translate="previousChats">Önceki Sohbetler</span>
+                </div>
+                <div class="search-box">
+                    <input type="text" class="search-input" data-translate-placeholder="searchChats" placeholder="Sohbetlerde ara...">
+                </div>
+                <div class="history-list">
+                    <!-- Sohbet geçmişi -->
+                </div>
+            </div>
+
+            <!-- Alt Menü -->
+            <div class="bottom-menu">
+                <div class="settings">
+                    <a href="#" class="menu-item" id="settingsToggle">
+                        <i class="settings-icon">⚙️</i>
+                        <span data-translate="settings">Ayarlar</span>
+                    </a>
+                    <div class="submenu">
+                        <a href="#" class="submenu-item" id="themeToggle">
+                            <i class="theme-icon">🎨</i>
+                            <span data-translate="themeLight">Açık Tema</span>
+                        </a>
+                        <a href="#" class="submenu-item" id="languageToggle">
+                            <i class="language-icon">🌍</i>
+                            <span data-translate="language">Dil: TR</span>
+                        </a>
+                        <a href="#" class="submenu-item active" id="profileLink">
+                            <i class="profile-icon">👤</i>
+                            <span data-translate="profile">Profil</span>
+                        </a>
+                        <a href="login.html" class="submenu-item" id="logoutLink">
+                            <i class="logout-icon">🚪</i>
+                            <span data-translate="logout">Çıkış</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Profil İçeriği -->
+        <div class="profile-content">
+            <div class="content-header">
+                <h1 data-translate="profileTitle">Profil Bilgileri</h1>
+            </div>
+            
+            <div class="content-container">
+                <div class="profile-section">
+                    <div class="profile-avatar">
+                        <div class="avatar-wrapper">
+                            <div class="avatar-container">👤</div>
+                            <button class="primary-button change-avatar-btn">
+                                <i class="photo-icon">📷</i>
+                                <span data-translate="changeAvatar">Profil Fotoğrafını Değiştir</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="info-container">
+                        <div class="info-group">
+                            <label class="info-label" data-translate="fullName">Ad Soyad</label>
+                            <div class="input-group">
+                                <input type="text" class="text-input" value="Kullanıcı Adı" readonly>
+                                <button class="action-button edit-btn">
+                                    <i class="edit-icon">✏️</i>
+                                    <span data-translate="edit">Düzenle</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="info-group">
+                            <label class="info-label" data-translate="email">E-posta</label>
+                            <div class="input-group">
+                                <input type="email" class="text-input" value="kullanici@email.com" readonly>
+                                <button class="action-button edit-btn">
+                                    <i class="edit-icon">✏️</i>
+                                    <span data-translate="edit">Düzenle</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="info-group">
+                            <label class="info-label" data-translate="password">Şifre</label>
+                            <div class="input-group">
+                                <input type="password" class="text-input" value="********" readonly>
+                                <button class="action-button edit-btn">
+                                    <i class="edit-icon">🔒</i>
+                                    <span data-translate="change">Değiştir</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="info-group">
+                            <label class="info-label" data-translate="languagePreference">Dil Tercihi</label>
+                            <select class="select-input" id="languageSelect">
+                                <option value="tr">Türkçe</option>
+                                <option value="en">English</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="stats-container">
+                        <h2 class="section-title" data-translate="usageStats">Kullanım İstatistikleri</h2>
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <span class="stat-value">125</span>
+                                <span class="stat-label" data-translate="totalChats">Toplam Sohbet</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-value">1.5K</span>
+                                <span class="stat-label" data-translate="totalMessages">Toplam Mesaj</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-value">30</span>
+                                <span class="stat-label" data-translate="savedChats">Kaydedilen Sohbet</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="action-container">
+                        <button class="primary-button save-profile-btn">
+                            <i class="save-icon">💾</i>
+                            <span data-translate="saveChanges">Değişiklikleri Kaydet</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script dosyaları -->
+    <script src="static/js/theme.js"></script>
+    <script src="static/js/language.js"></script>
+    <script src="static/js/sidebar.js"></script>
+    <script src="static/js/events.js"></script>
+    <script src="static/js/profile.js"></script>
+</body>
+</html> 
