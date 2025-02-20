@@ -46,7 +46,7 @@ The model results and performance evaluations are as follows:
 ## Contact
 
 - [Muhammed](https://github.com/muhammedksee)
-- [Mail](kosemuhammet545@gmail.com)
+- kosemuhammet545@gmail.com
 
 ## License
 
